@@ -6,13 +6,23 @@
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body style="border-top-color: #14213d">
+  <body>
     <h1>Circle Calculator</h1>
     <p>Enter the diameter below</p>
     <p>(Diameter = radius x 2)</p>
-    <input type="text" id="input" name="input">
-    <button id="calc-btn">Calculate!</button>
+    <div class="input-div">
+      <input type="text" id="input" name="input">
+    </div>
+    <br>
+    <div class="btn-div">
+      <button id="calc-btn">Calculate!</button>
+    </div>
     <p id="error-msg"></p>
+    <div> 
+      <p id="answer-area">Area:</p>
+      <p id="answer-circ">Circumference</p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -6,6 +6,10 @@ let circ = 0
 document.getElementById('calc-btn').addEventListener('click', calculateCircle)
 
 function calculateCircle () {
+  document.getElementById('error-msg').innerHTML = null
+  document.getElementById('answer-area').innerHTML = 'Area:'
+  document.getElementById('answer-circ').innerHTML = 'Circumference:'
+
   diameter = document.getElementById('input').value
   diameter = parseInt(diameter)
   console.log(diameter)
@@ -18,6 +22,8 @@ function calculateCircle () {
     console.log('-')
     console.log(circ)
     console.log('---')
+    document.getElementById('answer-area').innerHTML = 'Area: ' + area
+    document.getElementById('answer-circ').innerHTML = 'Circumference: ' + circ
   } else {
     document.getElementById('error-msg').innerHTML = 'Please enter a positive number using numerical symbols.'
   }
