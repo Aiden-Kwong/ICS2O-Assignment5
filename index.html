@@ -8,21 +8,31 @@
   </head>
   <body>
     <h1>Circle Calculator</h1>
-    <p>Enter the diameter below</p>
-    <p>(Diameter = radius x 2)</p>
+    <p><b>Enter the diameter below:</b></p>
+    <p><sup>(Diameter = radius x 2)</sup></p>
+
     <div class="input-div">
       <input type="text" id="input" name="input">
     </div>
     <br>
+
     <div class="btn-div">
       <button id="calc-btn">Calculate!</button>
     </div>
     <p id="error-msg"></p>
-    <div> 
+
+    <div class="answers"> 
       <p id="answer-area">Area:</p>
       <p id="answer-circ">Circumference</p>
     </div>
+    <br>
 
+    <h3><u>Formulas to remember:</u></h3>
+    <p class="formulas">Radius = d / 2</p>
+    <p class="formulas">Area = πr<sup>2</sup></p>
+    <p class="formulas">Circumference = πd, 2πr</p>
+
+    <img src="images/circle-label.png" alt="Labelled circle diagram" class="image">
     <script src="script.js"></script>
   </body>
 </html>

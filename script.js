@@ -3,6 +3,7 @@ let radius = 0
 let area = 0
 let circ = 0
 
+// This event listener activates the calculateCircle function when the button is clicked.
 document.getElementById('calc-btn').addEventListener('click', calculateCircle)
 
 function calculateCircle () {
