@@ -21,7 +21,7 @@ function calculateCircle () {
   // Console log the diameter for backend purposes.
   console.log(diameter)
   console.log('--')
-  
+
   // If the diameter is a positive number, follow this branch.
   if (!isNaN(diameter) && diameter > 0) {
     // Determine radius by dividing diameter by 2.
@@ -38,13 +38,13 @@ function calculateCircle () {
     console.log('-')
     console.log(circ)
     console.log('---')
-    
+
     // Display area in the correct paragraph.
     document.getElementById('answer-area').innerHTML = 'Area: ' + area
 
     // Display circumference in the correct paragraph.
     document.getElementById('answer-circ').innerHTML = 'Circumference: ' + circ
-  
+
   // Otherwise, display this error message.
   } else {
     document.getElementById('error-msg').innerHTML = 'Please enter a positive number using numerical symbols.'
